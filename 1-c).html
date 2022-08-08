@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>biggest</title>
+        <script>
+            function operations(){
+                let a;
+                let b;
+                let c;
+                let res;
+                a=document.getElementById("a").value;
+                b=document.getElementById("b").value;
+                c=document.getElementById("c").value;
+                
+                if((0<c)&&(5>c)){
+                
+
+                switch(c){
+                    case 1:
+                        res=a+b;
+                        alert(res+" is the result");
+                        break;
+
+                    case 2:
+                        res=a-b;
+                        alert(res+" is the result");
+                        break;
+
+                    case 3:
+                        res=a*b;
+                        alert(res+" is the result");
+                        break;
+
+                    case 4:
+                        res=a/b;
+                        alert(res+" is the result");
+                        break;
+                    
+                    default:
+                        alert("Invalid number");
+                }
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <label for="a">Enter value of a:</label>
+        <input type="number" id="a"><br>
+        <label for="b">Enter value of b:</label>
+        <input type="number" id="b"><br>
+        <label for="c">Enter value of c:</label>
+        <input type="number" id="c">
+        <button onclick="operations()">check</button>
+    </body>
+</html>

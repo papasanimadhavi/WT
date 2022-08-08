@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>biggest</title>
+        <script>
+            function biggest(){
+                var a;
+                var b;
+                var c;
+                a=document.getElementById("a").value;
+                b=document.getElementById("b").value;
+                c=document.getElementById("c").value;
+                
+                if((a>b)&&(a>c)){
+                    alert(a+" is big");
+                }
+                if((b>a)&&(b>c)){
+                    alert(b+" is big");
+                }
+                if((c>a)&&(c>b)){
+                    alert(c+" is big");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label for="a">Enter value of a:</label>
+        <input type="text" id="a"><br>
+        <label for="b">Enter value of b:</label>
+        <input type="text" id="b"><br>
+        <label for="c">Enter value of c:</label>
+        <input type="text" id="c">
+        <button onclick="biggest()">check</button>
+    </body>
+</html>

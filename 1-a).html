@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <script>
+            function yearornot(){
+                var year;
+                year=document.getElementById("year").value;
+
+                if((0==year%4)&&(0!=year%100)||(0==year%400))
+                {
+                    alert(year+" is a leap year");
+                }
+                else
+                {
+                    alert(year+" is not a leap year");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Leap year</h1>
+        <p>To check whether the given year is leap year or not</p>
+        <label for="name">Enter year:</label>
+        <input type="text" id="year">
+        <button onclick="yearornot()">check</button>
+    </body>
+</html>
